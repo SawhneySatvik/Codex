@@ -29,6 +29,7 @@ const Test = () => {
   };
 
   return (
+    <>
     <div className="container" style={{ margin: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '10px' }}>
       <h1>STORY</h1>
       <br />
@@ -62,6 +63,172 @@ const Test = () => {
       </p>
 
     </div>
+     <div className="container" style={{ margin: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '10px' }}>
+     <h1>STORY</h1>
+     <br />
+     {/* <p>A React hook that converts speech from the microphone to text and makes it available to your React components.</p> */}
+
+     <div className="main-content" onClick={() => setTextToCopy(transcript)}>
+       {transcript}
+     </div>
+
+     <div className="btn-style">
+       <button onClick={setCopied} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+         {isCopied? 'Copied!' : 'Copy to clipboard'}
+       </button>
+       <button onClick={startListening} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+         Start Listening
+       </button>
+       <button onClick={SpeechRecognition.stopListening} style={{ backgroundColor: '#f44336', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+         Stop Listening
+       </button>
+       <button onClick={calculateCorrectness} style={{ backgroundColor: '#2196F3', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+         Calculate Correctness
+       </button>
+     </div>
+     <br />
+     <p>
+       Target Text: {targetText}
+     </p>
+     <br />
+     <p>
+       Correctness: {correctness}%
+     </p>
+
+   </div>
+    <div className="container" style={{ margin: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '10px' }}>
+    <h1>PARAGRAPH</h1>
+    <br />
+    {/* <p>A React hook that converts speech from the microphone to text and makes it available to your React components.</p> */}
+
+    <div className="main-content" onClick={() => setTextToCopy(transcript)}>
+      {transcript}
+    </div>
+
+    <div className="btn-style">
+      <button onClick={setCopied} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+        {isCopied? 'Copied!' : 'Copy to clipboard'}
+      </button>
+      <button onClick={startListening} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+        Start Listening
+      </button>
+      <button onClick={SpeechRecognition.stopListening} style={{ backgroundColor: '#f44336', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+        Stop Listening
+      </button>
+      <button onClick={calculateCorrectness} style={{ backgroundColor: '#2196F3', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+        Calculate Correctness
+      </button>
+    </div>
+    <br />
+    <p>
+      Target Text: {targetText}
+    </p>
+    <br />
+    <p>
+      Correctness: {correctness}%
+    </p>
+
+  </div>
+   <div className="container" style={{ margin: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '10px' }}>
+   <h1>LINE</h1>
+   <br />
+   {/* <p>A React hook that converts speech from the microphone to text and makes it available to your React components.</p> */}
+
+   <div className="main-content" onClick={() => setTextToCopy(transcript)}>
+     {transcript}
+   </div>
+
+   <div className="btn-style">
+     <button onClick={setCopied} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+       {isCopied? 'Copied!' : 'Copy to clipboard'}
+     </button>
+     <button onClick={startListening} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+       Start Listening
+     </button>
+     <button onClick={SpeechRecognition.stopListening} style={{ backgroundColor: '#f44336', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+       Stop Listening
+     </button>
+     <button onClick={calculateCorrectness} style={{ backgroundColor: '#2196F3', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+       Calculate Correctness
+     </button>
+   </div>
+   <br />
+   <p>
+     Target Text: {targetText}
+   </p>
+   <br />
+   <p>
+     Correctness: {correctness}%
+   </p>
+
+ </div>
+  <div className="container" style={{ margin: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '10px' }}>
+  <h1>WORD</h1>
+  <br />
+  {/* <p>A React hook that converts speech from the microphone to text and makes it available to your React components.</p> */}
+
+  <div className="main-content" onClick={() => setTextToCopy(transcript)}>
+    {transcript}
+  </div>
+
+  <div className="btn-style">
+    <button onClick={setCopied} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+      {isCopied? 'Copied!' : 'Copy to clipboard'}
+    </button>
+    <button onClick={startListening} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+      Start Listening
+    </button>
+    <button onClick={SpeechRecognition.stopListening} style={{ backgroundColor: '#f44336', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+      Stop Listening
+    </button>
+    <button onClick={calculateCorrectness} style={{ backgroundColor: '#2196F3', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+      Calculate Correctness
+    </button>
+  </div>
+  <br />
+  <p>
+    Target Text: {targetText}
+  </p>
+  <br />
+  <p>
+    Correctness: {correctness}%
+  </p>
+
+</div>
+ <div className="container" style={{ margin: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '10px' }}>
+ <h1>LETTER</h1>
+ <br />
+ {/* <p>A React hook that converts speech from the microphone to text and makes it available to your React components.</p> */}
+
+ <div className="main-content" onClick={() => setTextToCopy(transcript)}>
+   {transcript}
+ </div>
+
+ <div className="btn-style">
+   <button onClick={setCopied} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+     {isCopied? 'Copied!' : 'Copy to clipboard'}
+   </button>
+   <button onClick={startListening} style={{ backgroundColor: '#4CAF50', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+     Start Listening
+   </button>
+   <button onClick={SpeechRecognition.stopListening} style={{ backgroundColor: '#f44336', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+     Stop Listening
+   </button>
+   <button onClick={calculateCorrectness} style={{ backgroundColor: '#2196F3', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', marginLeft: '10px' }}>
+     Calculate Correctness
+   </button>
+ </div>
+ <br />
+ <p>
+   Target Text: {targetText}
+ </p>
+ <br />
+ <p>
+   Correctness: {correctness}%
+ </p>
+
+</div>
+</>
 
   );
 };
