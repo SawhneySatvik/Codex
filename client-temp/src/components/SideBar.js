@@ -107,7 +107,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Admin
+                  Student Name
                 </Typography>
                 {/* <Typography variant="h5" color={colors.greenAccent[500]}>
                   VP Fancy Admin
@@ -208,6 +208,13 @@ const Sidebar = () => {
               title="Line Chart"
               to="/line"
               icon={<TimelineOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Geography Chart"
+              to="/geography"
+              icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />

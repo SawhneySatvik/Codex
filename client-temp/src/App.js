@@ -4,7 +4,7 @@ import AboutUs from './pages/AboutUs'
 import Admin from './pages/Admin'
 import Login from './pages/auth/Login'
 import Register from './pages/auth/Register'
-// import Blogs from './pages/Blogs'
+import Blogs from './pages/Blogs'
 import Donate from './pages/Donate'
 import HomePage from './pages/HomePage'
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -18,8 +18,6 @@ import Recommend from './pages/Admin/Recommend';
 import Results from './pages/Admin/Results';
 import Test from './pages/Admin/Test.js';
 import { useSpeechRecognition } from 'react-speech-recognition';
-import PieChart from './pages/Admin/PieChart.js';
-import LineChart from './pages/Admin/LineChart';
 
 export default function App() {
   const [theme, colorMode] = useMode();
@@ -41,8 +39,7 @@ export default function App() {
             {/* <Route path="/login" element={<Login />} /> */}
             <Route path="/about" element={<AboutUs />} />
             <Route path="/test" element={<Test />} />
-            
-            {/* <Route path="/blogs" element={<Blogs />} /> */}
+            <Route path="/blogs" element={<Blogs />} />
             {/* <Route path="/admin" element={<Admin />} /> */}
 
             <Route path="/results" element={<Results />} />
@@ -50,8 +47,8 @@ export default function App() {
             {/* <Route path="/invoices" element={<Invoices />} /> */}
             {/* <Route path="/form" element={<Form />} /> */}
             {/* <Route path="/bar" element={<Bar />} /> */}
-            <Route path="/pie" element={<PieChart />} />
-            <Route path="/line" element={<LineChart />} />
+            {/* <Route path="/pie" element={<Pie />} /> */}
+            {/* <Route path="/line" element={<Line />} /> */}
             <Route path="/recommend" element={<Recommend />} />
             <Route path="/calendar" element={<Calendar />} />
             {/* <Route path="/geography" element={<Geography />} /> */}
